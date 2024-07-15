@@ -36,3 +36,6 @@
 
 ![View the workflow](https://i.postimg.cc/wjbSWQyc/Screenshot-2024-07-15-150904.png)
 # Congratulations you are done!!
+
+### Reference:
+https://openart.ai/workflows/datou/ghibli-magic/TRvI2GHsyg7yc1RhN9S1
