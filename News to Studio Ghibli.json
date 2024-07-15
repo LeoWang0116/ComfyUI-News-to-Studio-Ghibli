@@ -97,10 +97,10 @@
         3566,
         470
       ],
-      "size": {
-        "0": 210,
-        "1": 26
-      },
+      "size": [
+        210,
+        246
+      ],
       "flags": {},
       "order": 23,
       "mode": 0,
@@ -128,7 +128,7 @@
         26
       ],
       "flags": {},
-      "order": 15,
+      "order": 16,
       "mode": 0,
       "inputs": [
         {
@@ -242,60 +242,6 @@
       ]
     },
     {
-      "id": 49,
-      "type": "CheckpointLoaderSimple",
-      "pos": [
-        4286.459542654013,
-        303.46835033742263
-      ],
-      "size": {
-        "0": 348.8996887207031,
-        "1": 98
-      },
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            79
-          ],
-          "shape": 3,
-          "slot_index": 0,
-          "label": "MODEL"
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            80
-          ],
-          "shape": 3,
-          "slot_index": 1,
-          "label": "CLIP"
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            68,
-            81
-          ],
-          "shape": 3,
-          "slot_index": 2,
-          "label": "VAE"
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "dreamshaperXL_lightningDPMSDE.safetensors"
-      ]
-    },
-    {
       "id": 63,
       "type": "Note",
       "pos": [
@@ -307,7 +253,7 @@
         "1": 98.73590850830078
       },
       "flags": {},
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "properties": {
         "text": ""
@@ -317,66 +263,6 @@
       ],
       "color": "#223",
       "bgcolor": "#335"
-    },
-    {
-      "id": 60,
-      "type": "LoraLoader",
-      "pos": [
-        4676.459542654014,
-        313.46835033742263
-      ],
-      "size": {
-        "0": 315,
-        "1": 126
-      },
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 79,
-          "label": "model"
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 80,
-          "label": "clip"
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            63
-          ],
-          "shape": 3,
-          "slot_index": 0,
-          "label": "MODEL"
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            69,
-            70
-          ],
-          "shape": 3,
-          "slot_index": 1,
-          "label": "CLIP"
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoraLoader"
-      },
-      "widgets_values": [
-        "StudioGhibli.Redmond-StdGBRRedmAF-StudioGhibli.safetensors",
-        1,
-        1
-      ]
     },
     {
       "id": 65,
@@ -390,7 +276,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "properties": {
         "text": ""
@@ -413,7 +299,7 @@
         "1": 76.00005340576172
       },
       "flags": {},
-      "order": 13,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -455,7 +341,7 @@
         "1": 76.00005340576172
       },
       "flags": {},
-      "order": 14,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -541,7 +427,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "outputs": [
         {
@@ -616,7 +502,7 @@
         26
       ],
       "flags": {},
-      "order": 10,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -777,7 +663,7 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        702965222453995,
+        1073841374861639,
         "randomize",
         4,
         1.8,
@@ -798,7 +684,7 @@
         "1": 96.43144989013672
       },
       "flags": {},
-      "order": 5,
+      "order": 4,
       "mode": 0,
       "properties": {
         "text": ""
@@ -855,125 +741,6 @@
       }
     },
     {
-      "id": 10,
-      "type": "CheckpointLoaderSimple",
-      "pos": [
-        2051,
-        359
-      ],
-      "size": {
-        "0": 315,
-        "1": 98
-      },
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            7
-          ],
-          "shape": 3,
-          "label": "MODEL",
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            6,
-            11
-          ],
-          "shape": 3,
-          "label": "CLIP",
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            13
-          ],
-          "shape": 3,
-          "label": "VAE",
-          "slot_index": 2
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "sd3_medium_incl_clips_t5xxlfp16.safetensors"
-      ]
-    },
-    {
-      "id": 12,
-      "type": "KSampler",
-      "pos": [
-        2968,
-        279
-      ],
-      "size": {
-        "0": 315,
-        "1": 262
-      },
-      "flags": {},
-      "order": 21,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 7,
-          "label": "model"
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "link": 8,
-          "label": "positive"
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "link": 9,
-          "label": "negative"
-        },
-        {
-          "name": "latent_image",
-          "type": "LATENT",
-          "link": 10,
-          "label": "latent_image"
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            12
-          ],
-          "shape": 3,
-          "label": "LATENT",
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "KSampler"
-      },
-      "widgets_values": [
-        1092867272438010,
-        "fixed",
-        4,
-        1,
-        "euler",
-        "sgm_uniform",
-        1
-      ]
-    },
-    {
       "id": 79,
       "type": "PreviewImage",
       "pos": [
@@ -1011,7 +778,7 @@
         "1": 293.1675109863281
       },
       "flags": {},
-      "order": 16,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -1054,10 +821,10 @@
         710.1557585312972,
         478.0767809006858
       ],
-      "size": [
-        314.6825866699219,
-        378.84649658203125
-      ],
+      "size": {
+        "0": 314.6825866699219,
+        "1": 378.84649658203125
+      },
       "flags": {},
       "order": 17,
       "mode": 0,
@@ -1089,7 +856,7 @@
       },
       "widgets_values": [
         "",
-        "The passage discusses the introduction and implications of ammo dispensing vending machines launched by the Texas-based company American Rounds. These machines have been installed in select grocery stores across Alabama, Oklahoma, and Texas, with plans to expand into Colorado. The vending machines aim to make ammunition sales more accessible by providing a convenient, 24/7 solution, particularly in rural areas where traditional gun shops may be sparse.\n\nThe customer interaction with the vending machines involves a straightforward process using a touchscreen interface, ID scanning, and facial recognition to verify age and identity. Transactions are limited to credit card payments for traceability and security.\n\nThe security of these machines is emphasized with robust physical fortifications and advanced AI technologies to ensure compliance with regulations and prevent unauthorized access. The article suggests that these machines potentially offer a safer sales method compared to traditional gun shops, which might be more vulnerable to theft.\n\nThe public reaction to these machines is mixed. While some praise the convenience and accessibility, others raise concerns about safety, the normalization of ammunition purchases in common settings, and the lack of human oversight that could miss warning signs during transactions. Critics worry about the broader implications in a society already dealing with significant gun violence issues."
+        "This passage discusses the introduction and implementation of ammunition vending machines by the Texas-based company American Rounds. These machines, currently installed in grocery stores across Alabama, Oklahoma, and Texas, with planned expansions into Colorado, aim to make ammunition accessible, especially in rural areas with limited gun shops. The vending machines offer various types of ammunition, and their user-friendly touchscreen interface facilitates a quick purchasing process. Buyers scan a government-issued ID and use facial recognition for identity verification before completing their purchase with a credit card. \n\nKey security measures include robust machine construction, advanced AI technology for verification, and exclusively credit card transactions to ensure compliance with regulations and prevent theft or unauthorized access. Public opinion on these machines is divided: supporters appreciate the convenience, while critics raise safety concerns and potential escalation of gun violence due to the normalization of ammunition sales."
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1101,12 +868,12 @@
         -239.84424146870242,
         458.07678090068595
       ],
-      "size": [
-        324.8697204589844,
-        391.4146728515625
-      ],
+      "size": {
+        "0": 324.8697204589844,
+        "1": 391.4146728515625
+      },
       "flags": {},
-      "order": 12,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -1136,7 +903,7 @@
       },
       "widgets_values": [
         "",
-        "Title: Ammo Dispensing Vending Machines\n\nSubtitle: Introduction by American Rounds\nLaunched by Texas-based company American Rounds, these innovative vending machines have been installed in approximately 10 grocery stores across Alabama, Oklahoma, and Texas, with plans to expand into Colorado. The machines offer a wide selection of ammunition, including 12-gauge shotgun shells and 9mm bullets, catering to various firearm needs. CEO Grant Magers emphasizes that this initiative aims to revolutionize ammunition sales by making them more accessible, particularly in rural areas where traditional gun shops may be scarce. The company's vision is to provide a convenient, round-the-clock solution for ammunition purchases, eliminating the constraints of store hours and long queues.\n\nTitle: Ammo Dispensing Vending Machines\n\nSubtitle: Operational Mechanism\nCustomers interact with the vending machines through a user-friendly touchscreen interface, similar to using an ATM. The process begins with scanning a government-issued ID to verify the buyer is at least 21 years old. Next, facial recognition technology matches the buyer's face to their ID, ensuring identity verification. Once authenticated, users can select their desired ammunition type and complete the purchase using a credit card, as cash transactions are not accepted. The entire process is designed to be quick and efficient, typically taking only a minute and a half for familiar users.\n\nTitle: Ammo Dispensing Vending Machines\n\nSubtitle: Security Measures\nRobust security features are a key focus of the ammunition vending machines. The dispensers are fortified with layers of steel, weighing approximately 2,000 pounds to prevent theft and unauthorized access. Advanced AI technology, including card scanning and facial recognition software, meticulously verifies the identity and age of each buyer. Transactions are exclusively processed via credit cards, eliminating anonymous purchases and enabling transaction tracking. These measures aim to ensure compliance with federal and local regulations while maintaining high standards of responsible sales. American Rounds claims this setup potentially offers a safer method of selling ammunition compared to traditional gun shops, which may be more susceptible to theft.\n\nTitle: Ammo Dispensing Vending Machines\n\nSubtitle: Public Reaction and Concerns\nThe introduction of ammunition vending machines has sparked mixed reactions among the public and experts. Supporters argue that these machines provide convenient access to ammunition, especially in rural areas with limited gun stores. However, critics express concerns about potential safety risks and the normalization of ammunition sales in everyday settings. Nick Suplina, senior vice president at Everytown for Gun Safety, warns that such innovations could further promote gun and ammunition sales in a country already grappling with gun violence issues. Some experts also caution that the absence of human oversight during transactions may overlook potential red flags that a human clerk might catch."
+        "Title: Ammo Dispensing Vending Machines\n\nSubtitle: Introduction by American Rounds\nLaunched by Texas-based company American Rounds, these innovative vending machines have been installed in approximately 10 grocery stores across Alabama, Oklahoma, and Texas, with plans to expand into Colorado. The machines offer a wide selection of ammunition, including 12-gauge shotgun shells and 9mm bullets, catering to various firearm needs. CEO Grant Magers emphasizes that this initiative aims to revolutionize ammunition sales by making them more accessible, particularly in rural areas where traditional gun shops may be scarce. The company's vision is to provide a convenient, round-the-clock solution for ammunition purchases, eliminating the constraints of store hours and long queues.\n\nSubtitle: Operational Mechanism\nCustomers interact with the vending machines through a user-friendly touchscreen interface, similar to using an ATM. The process begins with scanning a government-issued ID to verify the buyer is at least 21 years old. Next, facial recognition technology matches the buyer's face to their ID, ensuring identity verification. Once authenticated, users can select their desired ammunition type and complete the purchase using a credit card, as cash transactions are not accepted. The entire process is designed to be quick and efficient, typically taking only a minute and a half for familiar users.\n\nSubtitle: Security Measures\nRobust security features are a key focus of the ammunition vending machines. The dispensers are fortified with layers of steel, weighing approximately 2,000 pounds to prevent theft and unauthorized access. Advanced AI technology, including card scanning and facial recognition software, meticulously verifies the identity and age of each buyer. Transactions are exclusively processed via credit cards, eliminating anonymous purchases and enabling transaction tracking. These measures aim to ensure compliance with federal and local regulations while maintaining high standards of responsible sales. American Rounds claims this setup potentially offers a safer method of selling ammunition compared to traditional gun shops, which may be more susceptible to theft.\n\nSubtitle: Public Reaction and Concerns\nThe introduction of ammunition vending machines has sparked mixed reactions among the public and experts. Supporters argue that these machines provide convenient access to ammunition, especially in rural areas with limited gun stores. However, critics express concerns about potential safety risks and the normalization of ammunition sales in everyday settings. Nick Suplina, senior vice president at Everytown for Gun Safety, warns that such innovations could further promote gun and ammunition sales in a country already grappling with gun violence issues. Some experts also caution that the absence of human oversight during transactions may overlook potential red flags that a human clerk might catch."
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1153,7 +920,7 @@
         "1": 379.61859130859375
       },
       "flags": {},
-      "order": 7,
+      "order": 5,
       "mode": 0,
       "outputs": [
         {
@@ -1174,7 +941,7 @@
         "\nAmmo Dispensing Vending Machines\nUser avatar\nCurated by\nPerplexity Team\n2 min read\n2 hours ago\n256\n10\nAccording to recent reports from the USA Today, ammunition vending machines have made their debut in grocery stores across several Southern states, offering customers 24/7 access to bullets alongside everyday items. Introduced by Texas-based company American Rounds, these high-tech dispensers use AI-powered facial recognition and ID scanning to verify buyers' ages and identities, aiming to provide a convenient yet secure method for purchasing ammunition.\n\n\n\ncbsnews.com favicon\nstatesman.com favicon\nnbcdfw.com favicon\nView 3 more\nIntroduction by American Rounds\nstatesman.com\nstatesman.com\nLaunched by Texas-based company American Rounds, these innovative vending machines have been installed in approximately 10 grocery stores across Alabama, Oklahoma, and Texas, with plans to expand into Colorado. The machines offer a wide selection of ammunition, including 12-gauge shotgun shells and 9mm bullets, catering to various firearm needs. CEO Grant Magers emphasizes that this initiative aims to revolutionize ammunition sales by making them more accessible, particularly in rural areas where traditional gun shops may be scarce. The company's vision is to provide a convenient, round-the-clock solution for ammunition purchases, eliminating the constraints of store hours and long queues.\nusatoday.com favicon\nabc7ny.com favicon\nstatesman.com favicon\n4 SOURCES\nOperational Mechanism\nyahoo.com\nyahoo.com\nCustomers interact with the vending machines through a user-friendly touchscreen interface, similar to using an ATM. The process begins with scanning a government-issued ID to verify the buyer is at least 21 years old. Next, facial recognition technology matches the buyer's face to their ID, ensuring identity verification. Once authenticated, users can select their desired ammunition type and complete the purchase using a credit card, as cash transactions are not accepted. The entire process is designed to be quick and efficient, typically taking only a minute and a half for familiar users.\nusatoday.com favicon\nnbcdfw.com favicon\nabc7ny.com favicon\n3 SOURCES\nSecurity Measures\nRobust security features are a key focus of the ammunition vending machines. The dispensers are fortified with layers of steel, weighing approximately 2,000 pounds to prevent theft and unauthorized access. Advanced AI technology, including card scanning and facial recognition software, meticulously verifies the identity and age of each buyer. Transactions are exclusively processed via credit cards, eliminating anonymous purchases and enabling transaction tracking. These measures aim to ensure compliance with federal and local regulations while maintaining high standards of responsible sales. American Rounds claims this setup potentially offers a safer method of selling ammunition compared to traditional gun shops, which may be more susceptible to theft.\nusatoday.com favicon\ncbsnews.com favicon\namericanrounds.com favicon\n4 SOURCES\nPublic Reaction and Concerns\nshutterstock.com\nshutterstock.com\nThe introduction of ammunition vending machines has sparked mixed reactions among the public and experts. Supporters argue that these machines provide convenient access to ammunition, especially in rural areas with limited gun stores. However, critics express concerns about potential safety risks and the normalization of ammunition sales in everyday settings. Nick Suplina, senior vice president at Everytown for Gun Safety, warns that such innovations could further promote gun and ammunition sales in a country already grappling with gun violence issues. Some experts also caution that the absence of human oversight during transactions may overlook potential red flags that a human clerk might catch.",
         "Edit this document, don't change any main text, but change the format and delete unnecessary information like date, author, sources (basically anything except Titel and Paragraphs). But don't delete the Title. Write \"Subtitle: \" before write the subtitle. Similarly, write \"Title:\" before writing the actual title. Change to standard format.",
         "gpt-3.5-turbo",
-        454149908381982,
+        742632356572124,
         "randomize"
       ]
     },
@@ -1222,7 +989,7 @@
         "",
         "edit this to be a prompt for realisticVisionV60B1_v51HyperVAE_full. Safetensors. Make it like a prompt for image generation and be detailed. No more than 1 main subject in the image. The whole image should be focused on 1 object. Don't say things like\"**Prompt for RealisticVisionV60B1_v51HyperVAE_full: ** DO Not exaggerate anything and we need it to be as realistic as possible. Prompt no more than 40 terms.\n\" Because you are talking directly to the model.",
         "gpt-4o",
-        719210090623365,
+        615320481487591,
         "randomize"
       ]
     },
@@ -1233,10 +1000,10 @@
         1633.0486360796217,
         474.58382984713757
       ],
-      "size": [
-        314.6825866699219,
-        378.84649658203125
-      ],
+      "size": {
+        "0": 314.6825866699219,
+        "1": 378.84649658203125
+      },
       "flags": {},
       "order": 19,
       "mode": 0,
@@ -1268,7 +1035,7 @@
       },
       "widgets_values": [
         "",
-        "A single, modern ammo dispensing vending machine located in a grocery store. The machine should be sleek and robust, with a touchscreen interface at the front displaying various ammunition options. An ID scanner and a credit card payment slot are clearly visible. Advanced security features like facial recognition cameras are subtly integrated. The vending machine is well-lit, emphasizing its accessibility and technological advancement. The backdrop should hint at a grocery store setting in states like Alabama, Oklahoma, or Texas, with an aisle or store signage subtly included, but not distracting from the primary focus. The scene is realistic and clear, showcasing both the convenience and the security features of this new technology."
+        "Ammunition vending machine, located in a well-lit, modern grocery store. Machine is sleek, dark metallic, and features a large, user-friendly touchscreen interface. The environment should reflect a typical store ambiance with aisles and product shelves in the background. The machine should have a visible slot for scanning ID and a facial recognition camera. Highlight advanced security features like a robust build and secure payment method. Ensure realistic representation of the machine's details and context without exaggeration or clutter. Only one vending machine as the main subject, clear focus on its functionality and security measures."
       ],
       "color": "#432",
       "bgcolor": "#653"
@@ -1285,7 +1052,7 @@
         "1": 200
       },
       "flags": {},
-      "order": 11,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -1323,10 +1090,10 @@
         6772,
         420
       ],
-      "size": [
-        621.5501169467361,
-        605.0980500822006
-      ],
+      "size": {
+        "0": 621.5501098632812,
+        "1": 605.0980224609375
+      },
       "flags": {},
       "order": 33,
       "mode": 0,
@@ -1357,7 +1124,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 8,
+      "order": 6,
       "mode": 0,
       "outputs": [
         {
@@ -1422,6 +1189,239 @@
       "properties": {
         "Node name for S&R": "ImageUpscaleWithModel"
       }
+    },
+    {
+      "id": 49,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        4286,
+        303
+      ],
+      "size": {
+        "0": 348.8996887207031,
+        "1": 98
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            79
+          ],
+          "shape": 3,
+          "slot_index": 0,
+          "label": "MODEL"
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            80
+          ],
+          "shape": 3,
+          "slot_index": 1,
+          "label": "CLIP"
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            68,
+            81
+          ],
+          "shape": 3,
+          "slot_index": 2,
+          "label": "VAE"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "DreamShaperXL_Lightning.safetensors"
+      ]
+    },
+    {
+      "id": 60,
+      "type": "LoraLoader",
+      "pos": [
+        4676.459542654014,
+        313.46835033742263
+      ],
+      "size": {
+        "0": 315,
+        "1": 126
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 79,
+          "label": "model"
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 80,
+          "label": "clip"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            63
+          ],
+          "shape": 3,
+          "slot_index": 0,
+          "label": "MODEL"
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            69,
+            70
+          ],
+          "shape": 3,
+          "slot_index": 1,
+          "label": "CLIP"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoraLoader"
+      },
+      "widgets_values": [
+        "StudioGhibli.Redmond-V2/StudioGhibli.Redmond-StdGBRRedmAF-StudioGhibli.safetensors",
+        1,
+        1
+      ]
+    },
+    {
+      "id": 10,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        2051,
+        359
+      ],
+      "size": {
+        "0": 315,
+        "1": 98
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            7
+          ],
+          "shape": 3,
+          "label": "MODEL",
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            6,
+            11
+          ],
+          "shape": 3,
+          "label": "CLIP",
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            13
+          ],
+          "shape": 3,
+          "label": "VAE",
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "realisticVisionV60B1_v51HyperVAE_full.safetensors"
+      ]
+    },
+    {
+      "id": 12,
+      "type": "KSampler",
+      "pos": [
+        2968,
+        279
+      ],
+      "size": {
+        "0": 315,
+        "1": 262
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 7,
+          "label": "model"
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 8,
+          "label": "positive"
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 9,
+          "label": "negative"
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 10,
+          "label": "latent_image"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            12
+          ],
+          "shape": 3,
+          "label": "LATENT",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        673933389970140,
+        "fixed",
+        30,
+        6.5,
+        "ddpm",
+        "karras",
+        1
+      ]
     }
   ],
   "links": [
@@ -1791,10 +1791,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.13310000000000002,
+      "scale": 0.7400249944258206,
       "offset": [
-        2381.7418572500674,
-        1894.2423038331913
+        -5840.390826250952,
+        -290.9063419565848
       ]
     }
   },
